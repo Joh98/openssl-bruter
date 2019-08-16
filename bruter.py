@@ -76,5 +76,5 @@ with open("output.txt", 'r') as unparsed, open('suggestions.txt', 'w+') as parse
 unparsed.close()
 parsed.close()
 
-subprocess.call("rm output.txt | cat suggestions.txt", shell=True)
+subprocess.call("rm output.txt; cat suggestions.txt", shell=True)
 
