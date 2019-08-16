@@ -50,7 +50,7 @@ subprocess.call("rm suggestions.txt", shell=True)
 for cipher in cipher_list:
 
 	subprocess.call("echo " + cipher + " >> output.txt | bruteforce-salted-openssl -t 10 -1 -d md5 -N -f " + path + " -c "
-					+ cipher + " hackme.txt.enc >> output.txt 2>/dev/null", shell=True)
+					+ cipher + " INSERT NAME OF ENNCRYPTED FILE >> output.txt 2>/dev/null", shell=True)
 
 
 subprocess.call("clear", shell=True)
